@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="251dp">
+
+        <GridView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/gridView"
+            android:layout_gravity="center_vertical"
+            android:padding="10dp"
+            android:horizontalSpacing="10dp"
+            android:verticalSpacing="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Picture"
+            android:id="@+id/button5"
+            android:layout_gravity="center_horizontal"
+            android:onClick="addPicture"
+            android:layout_weight="0.07" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete Photo"
+            android:id="@+id/button7"
+            android:padding="5dp"
+            android:onClick="deletePicture"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Display"
+            android:id="@+id/button8"
+            android:padding="5dp"
+            android:onClick="display"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Move Photo"
+            android:id="@+id/button14"
+            android:onClick="movePhoto"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Go To Albums"
+            android:id="@+id/button6"
+            android:layout_gravity="center_horizontal"
+            android:onClick="goToAlbums" />
+    </LinearLayout>
+
+</LinearLayout>
